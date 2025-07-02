@@ -1,4 +1,4 @@
-cd ~/Documents/website
+cd ~/Documents/ow/website
 git init
 git add .
 git commit -m "Initial site"
