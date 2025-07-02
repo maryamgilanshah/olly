@@ -1,0 +1,6 @@
+cd ~/Documents/website
+git init
+git add .
+git commit -m "Initial site"
+git remote add origin https://github.com/<your-username>/olly.git
+git push -u origin main
