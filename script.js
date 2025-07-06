@@ -51,7 +51,7 @@ const mediaFiles = [
   '49.png',
   '50.png',
   '51.png',
-  '52.png',
+  '52.mp4',
   '53.png',
   '54.png',
   '55.png',
@@ -71,7 +71,14 @@ const mediaFiles = [
   '69.png',
   '70.png',
   '71.png',
-  '72.png'
+  '72.png',
+  '73.mp4',
+  '74.mp4',
+  '75.jpeg',
+  '76.mp4',
+  '77.mp4',
+  '78.mp4',
+  '79.mp4'
 ];
 
 // 2. Pick one at random
@@ -87,14 +94,14 @@ const viewer = document.getElementById('viewer');
 
 if (isVideo) {
   const vid = document.createElement('video');
-  vid.src = `/${randomFile}`;
+  vid.src = `media/${randomFile}`;
   vid.controls = true;      // show play/pause controls
   vid.autoplay = true;      // start playing right away
   vid.loop = true;          // replay when it ends
   viewer.appendChild(vid);
 } else {
   const img = document.createElement('img');
-  img.src = `/${randomFile}`;
+  img.src = `media/${randomFile}`;
   img.alt = 'Random media';
   viewer.appendChild(img);
 }
