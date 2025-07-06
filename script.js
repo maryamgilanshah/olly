@@ -87,14 +87,14 @@ const viewer = document.getElementById('viewer');
 
 if (isVideo) {
   const vid = document.createElement('video');
-  vid.src = `media/${randomFile}`;
+  vid.src = `/${randomFile}`;
   vid.controls = true;      // show play/pause controls
   vid.autoplay = true;      // start playing right away
   vid.loop = true;          // replay when it ends
   viewer.appendChild(vid);
 } else {
   const img = document.createElement('img');
-  img.src = `media/${randomFile}`;
+  img.src = `/${randomFile}`;
   img.alt = 'Random media';
   viewer.appendChild(img);
 }
